@@ -10,8 +10,8 @@ public class Main {
 		CriadorDeDocumentacao documentacaoHTML = new CriadorDeDocumentacao(fabricaHTML);
 		CriadorDeDocumentacao documentacaoMarkdown = new CriadorDeDocumentacao(fabricaMarkdown);
 
-		documentacaoHTML.criaDocumentacao("Exercicio", "Team 5", "We are the champions");
-		documentacaoMarkdown.criaDocumentacao("Exercicio", "Team 5", "Yes we can");
+		System.out.println(documentacaoHTML.criaDocumentacao("Exercicio", "Team 5", "We are the champions"));
+		System.out.println(documentacaoMarkdown.criaDocumentacao("Exercicio", "Team 5", "Yes we can"));
 		
 	}
 

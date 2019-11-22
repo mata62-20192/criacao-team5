@@ -1,23 +1,27 @@
 package ufba.abstractfactory;
 
+import ufba.elementos.Cabecalho;
+import ufba.elementos.Corpo;
+import ufba.elementos.Rodape;
+import ufba.elementos.markdown.CabecalhoMarkdown;
+import ufba.elementos.markdown.CorpoMarkdown;
+import ufba.elementos.markdown.RodapeMarkdown;
+
 public class FabricaDeDocumentacaoMarkdown extends FabricaDeDocumentacao {
 
 	@Override
 	public Cabecalho criaCabecalho() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CabecalhoMarkdown();
 	}
 
 	@Override
 	public Corpo criaCorpo() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CorpoMarkdown();
 	}
 
 	@Override
 	public Rodape criaRodape() {
-		// TODO Auto-generated method stub
-		return null;
+		return new RodapeMarkdown();
 	}
 
 }

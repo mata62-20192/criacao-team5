@@ -1,23 +1,27 @@
 package ufba.abstractfactory;
 
+import ufba.elementos.Cabecalho;
+import ufba.elementos.Corpo;
+import ufba.elementos.Rodape;
+import ufba.elementos.html.CabecalhoHTML;
+import ufba.elementos.html.CorpoHTML;
+import ufba.elementos.html.RodapeHTML;
+
 public class FabricaDeDocumentacaoHTML extends FabricaDeDocumentacao {
 
 	@Override
 	public Cabecalho criaCabecalho() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CabecalhoHTML();
 	}
 
 	@Override
 	public Corpo criaCorpo() {
-		// TODO Auto-generated method stub
-		return null;
+		return new CorpoHTML();
 	}
 
 	@Override
 	public Rodape criaRodape() {
-		// TODO Auto-generated method stub
-		return null;
+		return new RodapeHTML();
 	}
 
 }
